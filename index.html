@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+	<meta charset="utf-8">
+	<title>Group 4</title>
+	<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+	<link rel="shortcut icon" href="https://th.bing.com/th/id/R.0f642f5c51775515013f5d9d3603cfb8?rik=ScofSqM5QfnmPw&riu=http%3a%2f%2ficon-library.com%2fimages%2fbook-icon%2fbook-icon-28.jpg&ehk=n8DAYMBvlrcFvGSI5QkvoU%2brZsGmmIzGLfWEgaLojI4%3d&risl=&pid=ImgRaw&r=0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="header">
+
+			<h1>Group 4<h1>
+			<h6>21st Century Literature Blogs</h6>
+
+			<div class="navigation">
+				<div class="text">
+					<a href="index.html" style="color:#b99893;">HOME</a>
+				</div>
+				
+				<div class="text">
+					<a>ABOUT</a>
+				</div>
+				
+				<div class="text">
+					<a>BLOG</a>
+				</div>
+				
+				<div class="text">
+					<a>CONTACT</a>
+				</div>
+			</div>
+		</div>
+		
+		<section id="about">
+		<div class="about-container">
+			<div class="about-header">
+				<span>ABOUT US</span>
+			</div>
+			
+			<div class="about-box">
+				<div class="group-photo">
+					<img src="images/GROUP 4.jpg">
+				</div>
+				
+				<div class="about-text">
+					<p> We are the group 4 in 21st Century 
+						Literature , and we are tasked to 
+						create a blog post about different
+						21st century literary genre including the 
+						text-talk novels, chick lit, science 
+						fiction, and flash fiction, and present
+						it in a creative way. Thus, we, the group 4,
+						decided to create a web blog to show the 
+						blogs written by group 4 members. 
+						
+					</p>
+				</div>
+			</div>
+		</div>
+		</section>
+		
+		<div class="container">
+		<section id="blog">
+		
+			<div class="blog-heading">
+				<span>RECENT POSTS</span>
+			</div>
+			
+			<div class="blog-container">
+			
+				
+					<div class="blog-box">
+						<div class="blog-image">
+							<a href="text-talk-novel.html">
+							<img src="images/text talk.jpg">
+							</a>
+						</div>
+				
+						
+						<div class="blog-text">
+							<span>March 14, 2023 / 21st Century Literary Genre</span>
+							<a class="blog-title">Text-Talk Novel</a>
+						
+					
+						</div>
+					</div>
+				
+				
+				<div class="blog-box">
+				<a href="Chick lit.html">
+					<div class="blog-image">
+						<img src="images/chicklit.jpg">
+					</div>
+				</a>
+					
+					<div class="blog-text">
+						<span>March 14, 2023 / 21st Century Literary Genre</span>
+						<a class="blog-title">Chick Lit</a>
+					
+					</div>
+				</div>
+				<a href="science fiction.html">
+				<div class="blog-box">
+					<div class="blog-image">
+						<img src="images/Scifi.jpg">
+					</div>
+					
+					<div class="blog-text">
+						<span>March 14, 2023 / 21st Century Literary Genre</span>
+						<a class="blog-title">Science Fiction</a>
+					
+					</div>
+				</div>
+				
+				
+				
+				
+			</div>
+				<div class="button-box">
+				<button onclick="changePictureList()">></button>
+				</div>
+			
+		</section>
+		</div>
+<style>
+ @font-face{
+	font-family: curly;
+	src: url("font/curly.ttf");
+}
+
+.header h1{
+	font-family: curly;
+
+}
+
+@font-face{
+	font-famiy: bell;
+	src: url("font/Bell.ttf")
+}
+
+.blog-heading span{
+	font-family: bell;
+}
+.about-header span{
+	font-family: bell;
+}
+
+ </style>
+ 
+<script>
+function changePictureList() {
+  // Create a new set of images to replace the current ones
+  const newImages = `
+					
+					
+				<div class="blog-box">
+				<a href="Chick lit.html">
+					<div class="blog-image">
+						<img src="images/chicklit.jpg">
+					</div>
+				</a>
+					
+					<div class="blog-text">
+						<span>March 14, 2023 / 21st Century Literary Genre</span>
+						<a class="blog-title">Chick Lit</a>
+					
+					</div>
+				</div>
+				<a href="science fiction.html">
+				<div class="blog-box">
+					<div class="blog-image">
+						<img src="images/Scifi.jpg">
+					</div>
+				</a>	
+					<div class="blog-text">
+						<span>March 14, 2023 / 21st Century Literary Genre</span>
+						<a class="blog-title">Science Fiction</a>
+					
+					</div>
+				</div>
+				<div class="blog-box">
+				<a href="flash fiction.html">
+						<div class="blog-image">
+							<img src="images/flash fiction.jpg">
+						</div>
+				</a>
+					<div class="blog-text">
+						<span>March 14, 2023 / 21st Century Literary Genre</span>
+						<a class="blog-title">Flash Fiction</a>
+						
+					
+					</div>
+					</div>
+
+  `;
+  
+  const pictureList = document.querySelector('.blog-container');
+  pictureList.classList.add('picture-list-slide-out');
+  
+  setTimeout(() => {
+    pictureList.innerHTML = newImages;
+    pictureList.classList.remove('picture-list-slide-out');
+    pictureList.classList.add('picture-list-slide-in');
+    
+    setTimeout(() => {
+      pictureList.classList.remove('picture-list-slide-in');
+    }, 1000);
+  }, 500);
+}
+</script>
+
+	</body>
+</html>
